@@ -1,0 +1,56 @@
+SI_or_claim,entry,scope,calculation
+
+SI1_and_29,modules/global/run.py,Database filtering and model cohort counts,Record filtering and counts
+
+SI2,modules/global/run.py,Temporal-association attenuation from supplied fitted summaries,Aggregation of supplied fitted summaries
+
+SI3,modules/model_variance/reproduce_variance.py,Matched source and method residual variance,REML fitting from matched residuals
+
+SI4,modules/model/reaggregate_oof.py,Environmental conditional and operational transfer metrics,Metrics from supplied OOF predictions
+
+SI5,modules/global/reaggregate_support.py,Grid counts and area proportions using adopted support fields,Counts and area sums from support assignments
+
+SI6_7_8,modules/global/run.py,Global concentrations high concentrations and country ranks,Area-weighted aggregation and ranks
+
+SI9,modules/monitoring/reproduce_monitoring.py,Current fixed site order coverage checkpoints,Coverage calculation for the supplied site sequence
+
+SI10,DATA_NOTES.md,Older time-benefit planning scenario,Planning arithmetic from supplied site requirements (DATA_NOTES.md)
+
+SI11,modules/global/run.py,High concentration and inadequate support overlap,Spatial intersection and area aggregation
+
+SI12_13,modules/monitoring/reproduce_basin_monitoring.py,Monitoring states and fixed revisit packages,Basin classification and revisit calculations
+
+SI14,modules/model/MODEL_FILES.json,Prepared environmental feature inputs,Prepared feature tables and their file inventory
+
+SI15,modules/model_support_strata/reproduce_support_strata.py,Description stratified by adopted full-data support labels,Metrics stratified by full-data support labels
+
+SI16_17,modules/global/run.py,Paired regional comparison and country gaps,Paired regional aggregation and gap counts
+
+SI18,modules/monitoring/reproduce_monitoring.py,REML points; full 2000 bootstrap per domain optional,REML fit; optional 2000 bootstrap replicates per waterbody
+
+SI19,modules/global/run.py,Night-light representativeness,Sampling-location and national night-light comparison
+
+SI20,modules/global/run.py,Mass conversion with supplied parameter and latent draws,Mass conversion from supplied latent and trait draws
+
+SI21,modules/model_supplement/reproduce_supplement.py,All displayed model comparison rows,Metrics from supplied comparator OOF predictions
+
+SI22,modules/model/reaggregate_support_validation.py,Fold-local support scoring,Scores from supplied fold-local geometry and memberships
+
+SI23,modules/global/run.py,Reservoir case metrics,Metrics from supplied reservoir predictions
+
+SI24,modules/model_supplement/reproduce_supplement.py,Removal scores and recovery sensitivity,WIS calculation; geometric-retention source table missing (DATA_NOTES.md)
+
+SI25,modules/monitoring/reproduce_temporal.py,Original 5000-draw temporal simulation,5000 simulations per scenario
+
+SI26,modules/monitoring/reproduce_monitoring.py,Fixed-layout environmental-boundary intervals,200 environmental-boundary replicates with fixed sites
+
+SI27,modules/monitoring/reproduce_monitoring.py,95 and 305 site costs,24 site-cost scenarios
+
+SI28,modules/monitoring/reproduce_basin_monitoring.py,Basin local variance and continued investment,16 default cost scenarios; 216 with --full-cost-grid
+
+Figure1_country_statistics,modules/global/run.py,UN193 attribution and top15 country proportions,Country aggregation using UN193 attribution
+
+Research_capacity_ratio_3.1,DATA_NOTES.md,Original fitted contributions,Source contribution table missing from this bundle
+
+Coastal_ecoregion_gap_53percent,DATA_NOTES.md,Original ecoregion numerator and denominator,Source ecoregion counts missing from this bundle
+

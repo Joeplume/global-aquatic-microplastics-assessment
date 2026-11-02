@@ -1,8 +1,13 @@
-.venv/
 __pycache__/
-outputs/*
-!.gitkeep
 *.pyc
-.env
-.DS_Store
-Thumbs.db
+outputs*/
+.venv/
+
+# Local outputs and sync metadata
+*.baiduyun.uploading.cfg
+*.pending.zip
+*.zip
+04_internal_review/
+verification/
+results/
+.cache/

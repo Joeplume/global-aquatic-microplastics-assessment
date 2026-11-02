@@ -1,0 +1,161 @@
+{
+  "status": "frozen_before_new_training",
+  "seed": 260826,
+  "response": "frozen observed_log10; log10(items/m3); 10–5000 um",
+  "folds": "A/FROZEN_GROUPED10_FOLDS.csv.gz, persisted site-event grouped tenfold",
+  "cohort_N": 24129,
+  "information_arms": [
+    "environment",
+    "source_only",
+    "context_source_plus_protocol"
+  ],
+  "source_only_comparator": "H26 current A source-conditioned prediction when known, environmental fallback when new; no protocol mean head",
+  "context_warning": "H26 has no explicit per-record protocol mean head; context HGB/SVR/RF/LME/NN tables are auxiliary and cannot be called strictly input-matched H26 superiority",
+  "models": {
+    "BNN_nonhier": {
+      "reused_units": 30,
+      "implementation": "independently retrained original BNN backbone, no source layer",
+      "information": [
+        "environment"
+      ],
+      "interval": "reuse A outer-train-only observation SD"
+    },
+    "RF": {
+      "reused_units": 30,
+      "implementation": "RandomForestRegressor",
+      "n_estimators": 400,
+      "max_features": 0.7,
+      "min_samples_leaf": 5,
+      "n_jobs": 1,
+      "information": [
+        "environment (reuse)",
+        "context (reuse)",
+        "source_only (30 extra fits)"
+      ],
+      "candidate_budget": 1
+    },
+    "HistGradientBoosting": {
+      "implementation": "sklearn HistGradientBoostingRegressor; local XGBoost not installed",
+      "max_iter": 180,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 20,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "information": [
+        "environment",
+        "source_only",
+        "context"
+      ],
+      "candidate_budget": 1
+    },
+    "SVR": {
+      "implementation": "sklearn SVR",
+      "kernel": "rbf",
+      "C": 10.0,
+      "epsilon": 0.1,
+      "gamma": "scale",
+      "tol": 0.001,
+      "max_iter": 20000,
+      "cache_size_MiB": 256,
+      "information": [
+        "environment",
+        "source_only",
+        "context"
+      ],
+      "candidate_budget": 1,
+      "convergence_policy": "retain predictions and warning/fit_status when iteration limit reached"
+    },
+    "LinearMixedEffects": {
+      "implementation": "Gaussian random-intercept LME, exact group-Woodbury profiled REML via scipy scalar optimization; smoke verified against statsmodels MixedLM",
+      "fixed_effects": "intercept+environment; auxiliary context fit adds protocol fixed effects",
+      "random_effect": "source intercept",
+      "log_variance_ratio_bounds": [
+        -12,
+        12
+      ],
+      "optimizer_maxiter": 100,
+      "null_variance_ratio_candidate": true,
+      "weighted_likelihood": false,
+      "information": [
+        "environment and source_only from canonical joint LME",
+        "context from protocol LME"
+      ],
+      "candidate_budget": "variance component estimated by REML, no test-based tuning"
+    },
+    "NN_fixed_source": {
+      "implementation": "same original domain-specific BNN backbone classes/branches/caps/priors plus jointly learned, unpenalized fixed source intercepts initialized at zero; auxiliary protocol linear head jointly fitted",
+      "fitting_change": "one group-inner event holdout selects epoch, refit all outer training at selected epoch; unlike H26 source-disjoint mean fit followed by residual source layer",
+      "max_epochs": 180,
+      "patience": 24,
+      "backbone_lr": 0.0022,
+      "source_head_lr": 0.02,
+      "backbone_weight_decay": 2e-05,
+      "fixed_source_weight_decay": 0,
+      "Huber_beta": 0.45,
+      "KL_coefficient": 0.018,
+      "branch_shrinkage": 0.006,
+      "posterior_draws": 24,
+      "information": [
+        "environment and source_only from source-only joint fit",
+        "context from protocol joint fit"
+      ],
+      "candidate_budget": 1,
+      "interval": "NA, no validated observation calibration for joint fixed-source model"
+    }
+  },
+  "resource_budget": {
+    "core_model_domain_fold_units": 180,
+    "reused_verified_units": 60,
+    "new_core_units": 120,
+    "extra_RF_source_only_extension_units": 30,
+    "max_active_training_processes": 1,
+    "CPU_BLAS_threads": 2,
+    "mutex": "Local\\H26Validation20261008Training",
+    "estimated_wall_time_minutes": [
+      20,
+      60
+    ],
+    "estimate_basis": "prespecified small trees/SVR at 24k, will update from actual completed units",
+    "no_install_download_cloud": true
+  },
+  "selection_rule": "All hyperparameters fixed a priori. Only NN joint-model epoch selected on source-weighted RMSE of inner site-event grouped validation; no outer-test-based choices. Others use fixed settings/REML training likelihood.",
+  "evaluation": {
+    "point": [
+      "R2",
+      "RMSE",
+      "MAE",
+      "bias=prediction-observed",
+      "whole-group NNSE=1/(2-R2)"
+    ],
+    "weights": [
+      "record_equal",
+      "source_equal"
+    ],
+    "strata": [
+      "all",
+      "three waterbodies",
+      "known/new source",
+      "known/new coordinate location"
+    ],
+    "bootstrap_source_clusters": 1000,
+    "bootstrap_seed": 261008,
+    "single_record_NNSE": "NNSE is calculated for evaluation groups",
+    "new_model_observation_intervals": "NA; observation intervals require separate training-based calibration",
+    "strict_spatial_source_joint_common_holdouts": "not run for the six-model comparison"
+  },
+  "inputs": {
+    "old_A_oof": {
+      "path": "src/modeling/model_comparison/A_model_uncertainty/GROUPED10_COMPARISON_OOF.csv.gz",
+      "sha256": "c7fb8033628a2ab13fb5f6df779f29e758fe7982c71053d847ebd58708702b9a"
+    },
+    "old_A_manifest": {
+      "path": "src/modeling/model_comparison/A_model_uncertainty/RUN_MANIFEST.json",
+      "sha256": "72a87f2fadcad3698f7f1d7587437268fa0349ff27071d88ea4263e0393db80c"
+    },
+    "shared_contract": {
+      "path": "src/modeling/model_comparison/SHARED_CONTRACT.json",
+      "sha256": "daced30d579fdb418d9e5678395b1f2d1c988216058d8306c72358483b5fde8e"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "converged": true,
+  "n_rows": 975,
+  "n_sources": 49,
+  "n_geotime_strata": 210,
+  "n_methods": 17,
+  "sources_with_gt1_method": 1,
+  "methods_shared_by_gt1_source": 9,
+  "rows_by_domain": {
+    "marine": 561,
+    "freshwater": 274,
+    "transition": 140
+  },
+  "sources_by_domain": {
+    "freshwater": 16,
+    "marine": 19,
+    "transition": 14
+  },
+  "variance_components": {
+    "geotime": 0.36097763150063406,
+    "method": 0.060064539655735084,
+    "source": 0.7896361970149737,
+    "remaining_residual": 0.09076274674368641,
+    "known_measurement_raw_mean": 0.46893049659310154,
+    "known_measurement": 0.09076274674368641,
+    "remaining_after_known_measurement": 0.0
+  },
+  "variance_component_se": {
+    "geotime": 0.159418310247567,
+    "method": 0.24443255463559962,
+    "source": 0.650487378668404
+  },
+  "shares": {
+    "geotime": 0.2773676252914464,
+    "method": 0.04615232988060061,
+    "source": 0.6067398578125671,
+    "known_measurement": 0.06974018701538584,
+    "remaining_after_known_measurement": 0.0
+  },
+  "denominator_variance": 1.3014411149150293,
+  "known_measurement_capped_by_residual_component": true,
+  "log_likelihood": -581.2871505442181,
+  "warnings": [],
+  "source_ledger": "analysis/SI_V21_alignment_20261016_V2/runs/variance_20261016_161523/MATCHED_RECORD_LEDGER.csv",
+  "qaqc_oof": "analysis/weighted_training/aggregate_results/OOF_qaqc.csv.gz"
+}

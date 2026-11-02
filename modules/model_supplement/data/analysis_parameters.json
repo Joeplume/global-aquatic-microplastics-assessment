@@ -1,0 +1,3128 @@
+{
+  "baseline_folds": {
+    "freshwater/fold_1": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.9576756935090343,
+          6.5843069250900506,
+          5.831142515765466,
+          7.996313572,
+          0.1413131654,
+          252.04049464428135,
+          0.7243004272426564,
+          463.7562233185674,
+          670.9511152634058,
+          6.155921900827863,
+          3.2742142102090876,
+          1.089889884,
+          4.63830511054695,
+          5.253842876446207,
+          7.0,
+          0.0,
+          0.0,
+          0.5632462502,
+          0.33984607,
+          6.206575926724928,
+          5.303304908059076,
+          0.7327954,
+          17.22465324,
+          174.4055481
+        ],
+        "q10_q90_scales": [
+          2.4101231051947143,
+          3.1927425077673783,
+          5.522764948461582,
+          83.03211975,
+          1.098696987242,
+          2349.382641173515,
+          4.8419968607292345,
+          1789.4202748121145,
+          2523.522681667901,
+          4.195812416104278,
+          3.223234490989511,
+          1.7879433929,
+          5.792717205111614,
+          7.69519530151649,
+          1.0,
+          2.0,
+          2.0,
+          0.3982833326,
+          4.803103737,
+          9.556770011430052,
+          10.028047572471536,
+          11.938257,
+          19.04118156,
+          86.691269
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 1,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_10": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.9021844218111116,
+          6.550169964484633,
+          5.8313900715224944,
+          6.985197544,
+          0.1271862686,
+          261.88210055280325,
+          0.6800747876025361,
+          442.16523313501324,
+          623.3920066247548,
+          6.182986278472155,
+          3.2856942252553325,
+          1.046717525,
+          4.7084846098269795,
+          5.518656990529513,
+          7.0,
+          0.0,
+          0.0,
+          0.5566505194,
+          0.32735622,
+          6.194405391104672,
+          5.501258210544727,
+          0.60295105,
+          17.10799217,
+          175.1343231
+        ],
+        "q10_q90_scales": [
+          2.426982939540463,
+          3.2551432751484803,
+          5.373411892879002,
+          76.98495483,
+          1.044590036242,
+          2349.5192492662704,
+          4.496047319685621,
+          1603.469474452305,
+          2528.4497740300944,
+          4.1925832392059315,
+          3.2715638244293777,
+          1.7000837203000008,
+          6.215009523876473,
+          7.714502190291422,
+          1.0,
+          2.0,
+          2.0,
+          0.4065697789,
+          5.191125828,
+          10.049058675855347,
+          10.148236027602723,
+          12.7977495,
+          19.739529132999998,
+          88.78004460000002
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 10,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_2": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.955412597301234,
+          6.577499510096071,
+          5.8088382993380065,
+          6.009956837,
+          0.1402730048,
+          261.88210055280325,
+          0.6837847594905392,
+          459.55859180618046,
+          650.8545278929188,
+          6.155921900827863,
+          3.2742142102090876,
+          1.110411644,
+          4.831532551357635,
+          5.630853294633443,
+          7.0,
+          0.0,
+          0.0,
+          0.5638447404,
+          0.32941523,
+          6.206575926724928,
+          5.62040086571715,
+          0.68315065,
+          17.71148682,
+          175.1343231
+        ],
+        "q10_q90_scales": [
+          2.4232542983045495,
+          3.2799208456871796,
+          5.413670929438041,
+          76.98400574200001,
+          0.963315288741997,
+          2405.62568744512,
+          4.467031893182362,
+          1705.0535426976169,
+          2352.1628368927786,
+          4.4108308953356286,
+          3.23014165491621,
+          1.8132806419,
+          5.826135593004047,
+          7.753537705965677,
+          1.0,
+          2.0,
+          2.0,
+          0.4041109383,
+          5.188031487,
+          9.585260358256185,
+          10.10850786559065,
+          9.696405,
+          19.568727496999998,
+          89.85789490000002
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1109,
+        "fold": 2,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_3": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.955412597301234,
+          6.610642107970608,
+          5.831142515765466,
+          6.999442577,
+          0.1402730048,
+          271.0066630819978,
+          0.7392211129595421,
+          473.7166423005434,
+          690.864653824461,
+          6.189554869548417,
+          3.328720448733419,
+          1.088988185,
+          4.779677961214416,
+          5.3895282466014205,
+          7.0,
+          0.0,
+          0.0,
+          0.572745204,
+          0.34123492,
+          6.075346031088684,
+          5.198497031265826,
+          0.6318583,
+          17.39391708,
+          174.4055481
+        ],
+        "q10_q90_scales": [
+          2.469337121756694,
+          3.185506786832934,
+          5.4028372747296025,
+          78.98973083,
+          1.098325826558,
+          2393.640943476249,
+          4.867264679618331,
+          1724.5409652485516,
+          2423.3981219167626,
+          4.045757644203329,
+          3.213487674648995,
+          1.7279992993,
+          5.685420870324229,
+          7.700883531905396,
+          1.0,
+          2.0,
+          2.0,
+          0.37632542849999995,
+          5.516836752400001,
+          9.305596004838305,
+          10.10850786559065,
+          11.320334400000002,
+          18.673491477,
+          86.65930180000001
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 3,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_4": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.9417748134564026,
+          6.550169964484633,
+          5.8313900715224944,
+          7.996313572,
+          0.1396461427,
+          270.5953403413938,
+          0.6886056675850234,
+          459.55859180618046,
+          659.0978918340468,
+          6.12677210210266,
+          3.2856942252553325,
+          1.073340535,
+          4.708502646531675,
+          5.476881874464279,
+          7.0,
+          0.0,
+          0.0,
+          0.5601758361,
+          0.33520064,
+          6.075346031088684,
+          5.384495062789089,
+          0.57644886,
+          17.65735435,
+          174.8983459
+        ],
+        "q10_q90_scales": [
+          2.469337121756694,
+          3.1927425077673783,
+          5.363725931868576,
+          78.99684143,
+          1.051099919624,
+          2403.8772616066926,
+          5.312649428844454,
+          1698.3851772643034,
+          2520.102471087369,
+          3.9474915034009723,
+          3.2374686328514946,
+          1.7342353466,
+          5.8593275226132935,
+          7.748589437440848,
+          1.0,
+          2.0,
+          2.0,
+          0.38007473950000004,
+          5.516525978000001,
+          9.144432024165415,
+          10.028047572471536,
+          9.944703,
+          19.155088614599997,
+          84.70706179999999
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 4,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_5": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.955412597301234,
+          6.586125243731735,
+          5.8313900715224944,
+          5.99912262,
+          0.1402730048,
+          276.5154973703321,
+          0.7454316341765465,
+          463.7562233185674,
+          659.0978918340468,
+          6.164784435706416,
+          3.328720448733419,
+          1.082005858,
+          4.717319604805043,
+          5.3895282466014205,
+          7.0,
+          0.0,
+          0.0,
+          0.57080313565,
+          0.34123492,
+          6.206575926724928,
+          5.58724865840025,
+          0.6362176,
+          17.71148682,
+          176.2097473
+        ],
+        "q10_q90_scales": [
+          2.426661126221172,
+          3.2099387850019268,
+          5.372777452599326,
+          76.98368073,
+          1.0983983546425,
+          2405.66769130762,
+          4.576541486469042,
+          1593.9221574104388,
+          2486.846981101013,
+          4.311473002117257,
+          3.2691035922654863,
+          1.7010373468999997,
+          5.642453550801591,
+          7.7476400156536664,
+          1.0,
+          2.0,
+          2.0,
+          0.3778476715,
+          5.188076581,
+          9.192298593475419,
+          10.021937032735671,
+          13.132803,
+          19.166474344999997,
+          85.30237732000003
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 5,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_6": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.955412597301234,
+          6.550169964484633,
+          5.772869814505221,
+          5.001112461,
+          0.1396461427,
+          250.56630202967392,
+          0.7540048956871029,
+          463.7562233185674,
+          642.3280967061717,
+          6.182203549035221,
+          3.2856942252553325,
+          1.077195048,
+          4.693382508220881,
+          5.366910158013648,
+          7.0,
+          0.0,
+          0.0,
+          0.5690839887,
+          0.32790336,
+          6.169610732491456,
+          5.308267697401205,
+          0.6362176,
+          17.11252975,
+          174.9225311
+        ],
+        "q10_q90_scales": [
+          2.434121148159463,
+          3.239936779023396,
+          5.22006728022925,
+          77.99079132,
+          1.059356429558,
+          2126.4056940461023,
+          5.212651958013001,
+          1815.276952933736,
+          2464.121781100982,
+          4.1493226634315805,
+          3.1371514969545586,
+          1.7232523556,
+          5.685420870324229,
+          7.72338554375663,
+          1.0,
+          2.0,
+          2.0,
+          0.3753589392,
+          4.651027037,
+          9.549897132273578,
+          10.10850786559065,
+          13.556021,
+          18.955584525,
+          88.31524660000002
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 6,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_7": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.9576756935090343,
+          6.550169964484633,
+          5.837534701148774,
+          5.990326405,
+          0.1271862686,
+          282.8658877329229,
+          0.7540048956871029,
+          456.8390960523151,
+          667.1017921270637,
+          6.164784435706416,
+          3.328720448733419,
+          1.043208241,
+          4.7084846098269795,
+          5.225746673713202,
+          7.0,
+          0.0,
+          0.0,
+          0.561504066,
+          0.32790336,
+          6.075346031088684,
+          5.488937726156687,
+          0.66816527,
+          17.7358532,
+          176.3245087
+        ],
+        "q10_q90_scales": [
+          2.4303925069235497,
+          3.2676748030696965,
+          5.363725931868576,
+          79.93848419,
+          1.066530577063,
+          2405.1965064812125,
+          5.3041532449424285,
+          1814.074121247417,
+          2520.6500528421047,
+          4.222738767558184,
+          3.2374686328514946,
+          1.7698142829,
+          5.7652886954614075,
+          7.71333788887187,
+          1.0,
+          2.0,
+          2.0,
+          0.400283128,
+          4.894974437,
+          9.415442144789628,
+          10.021937032735671,
+          12.9908285,
+          18.789005086000003,
+          84.55986025999997
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 7,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_8": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.9021844218111116,
+          6.53710362584672,
+          5.749995740774356,
+          5.001484394,
+          0.1196963266,
+          246.549168465885,
+          0.741845726966858,
+          459.55859180618046,
+          628.203,
+          6.194729748832015,
+          3.2742142102090876,
+          1.089889884,
+          4.7084846098269795,
+          5.3003153692107094,
+          7.0,
+          0.0,
+          0.0,
+          0.5665714145,
+          0.34123492,
+          6.0867747269123065,
+          5.384495062789089,
+          0.60295105,
+          17.25614738,
+          175.2659912
+        ],
+        "q10_q90_scales": [
+          2.428659274563525,
+          3.190619735940815,
+          5.245235925118972,
+          79.97880554,
+          0.951389591442,
+          1979.96771958624,
+          4.316845470390158,
+          1696.39999780092,
+          2349.3255185606795,
+          3.920921013918436,
+          3.144902887284611,
+          1.7625863849,
+          5.66264929123137,
+          7.737526060012196,
+          1.0,
+          2.0,
+          2.0,
+          0.3777436018,
+          4.250536785,
+          9.322015905866772,
+          9.988471876441125,
+          9.849458000000052,
+          19.2191124,
+          89.03915410000002
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 8,
+        "domain": "freshwater"
+      }
+    },
+    "freshwater/fold_9": {
+      "process_scaler": {
+        "features": [
+          "night_lights_radiance_2020",
+          "m6_road_density_m_per_km2",
+          "spot_land_plastic_pressure_2020",
+          "m6_modis2019_strict_cropland_pct_0p5deg",
+          "m6_ghsl2020_nonresidential_builtup_pct_0p5deg",
+          "h26_upstream_spot_area_mean",
+          "h26_upstream_nightlight_area_mean",
+          "h26_upstream_road_area_mean",
+          "h26_upstream_population_area_mean",
+          "annual_runoff_mm_2020",
+          "m6_annual_max_daily_runoff_mm",
+          "m6_global_wind10m_ms_2020",
+          "h26_river_discharge_cms_max",
+          "h26_river_dist_down_km_min",
+          "h26_river_flow_order_max",
+          "h26_network_flow_east_unit",
+          "h26_network_flow_north_unit",
+          "m6_modis2020_terrestrial_ndvi_annual_mean_0p5deg",
+          "h26_upstream_lake_pct_lengthmean",
+          "h26_upstream_lake_volume_mcm_max",
+          "h26_upstream_reservoir_volume_mcm_max",
+          "h26_regulation_pct_lengthmean",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          0.955412597301234,
+          6.604982638051562,
+          5.805319899421398,
+          6.023266792,
+          0.1413131654,
+          279.0253860384093,
+          0.7454316341765465,
+          473.4791266427092,
+          710.101,
+          6.189554869548417,
+          3.2949532210763275,
+          1.089889884,
+          4.743365684739491,
+          5.312713246831769,
+          7.0,
+          0.0,
+          0.0,
+          0.572324872,
+          0.32790336,
+          6.206575926724928,
+          5.58724865840025,
+          0.71859777,
+          17.562705989999998,
+          174.8983459
+        ],
+        "q10_q90_scales": [
+          2.4210280016379584,
+          3.193503232466588,
+          5.4046194087072905,
+          74.04676819,
+          0.931816448206,
+          2403.4747770366644,
+          5.310816274688162,
+          1694.0429233861373,
+          2460.679,
+          4.222957881671631,
+          3.251787652799572,
+          1.7334378663,
+          5.6861845505164315,
+          7.700883531905396,
+          1.0,
+          2.0,
+          2.0,
+          0.3778476715,
+          5.187427478,
+          9.123128974983887,
+          10.021937032735671,
+          11.314256,
+          18.755084988999997,
+          87.07496650000002
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "network_normalized_fixed_slope_missing",
+      "training": {
+        "records": 1108,
+        "fold": 9,
+        "domain": "freshwater"
+      }
+    },
+    "marine/fold_1": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2415224479959094,
+          0.5830316797304884,
+          0.6076069805027902,
+          1.001913457714585
+        ],
+        "q10_q90_scales": [
+          0.7567084960730694,
+          1.0507287215821481,
+          0.6597931331930014,
+          1.3744502636383307
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 1,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_10": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2651309992388611,
+          0.6063229790530984,
+          0.5764888796867681,
+          0.986417853733908
+        ],
+        "q10_q90_scales": [
+          0.7802538117570136,
+          1.0713485194853174,
+          0.6653103366861718,
+          1.2933113894826402
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 10,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_2": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2659466016155877,
+          0.612518485695601,
+          0.6126497941968787,
+          1.0001911163304489
+        ],
+        "q10_q90_scales": [
+          0.7812901937986626,
+          1.056352360897149,
+          0.6567410868293431,
+          1.3870624726255307
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 2,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_3": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2325850276630949,
+          0.5575297820196602,
+          0.6076069805027902,
+          1.001913457714585
+        ],
+        "q10_q90_scales": [
+          0.7102819814973921,
+          1.031672586627847,
+          0.6471086837989495,
+          1.4493187358553279
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 3,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_4": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.27982131433524793,
+          0.6369549131794794,
+          0.5940482491778059,
+          0.9901552526458492
+        ],
+        "q10_q90_scales": [
+          0.7900173432376356,
+          1.0681053208628133,
+          0.6380912890032627,
+          1.2666988769025824
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 704,
+        "fold": 4,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_5": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2203963471787106,
+          0.5449494859732087,
+          0.6025716392627294,
+          1.001913457714585
+        ],
+        "q10_q90_scales": [
+          0.6949011747558104,
+          1.092106925943855,
+          0.7235973099116619,
+          1.5530689423950939
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 5,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_6": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2618200473739843,
+          0.6001113663451905,
+          0.6104408997121209,
+          0.996723095417808
+        ],
+        "q10_q90_scales": [
+          0.8016242296618784,
+          1.1014360611313179,
+          0.688351769800663,
+          1.431792674095775
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 6,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_7": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2421054225993748,
+          0.5975311102456461,
+          0.623932492416504,
+          1.057185485341109
+        ],
+        "q10_q90_scales": [
+          0.8159915259175183,
+          1.1814377471021216,
+          0.7404778245833088,
+          1.5257679229359011
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 7,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_8": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2466175454200361,
+          0.6012353292686656,
+          0.6288102108420912,
+          1.0626918213584209
+        ],
+        "q10_q90_scales": [
+          0.7726811005004847,
+          1.1191392094960826,
+          0.7040233320611834,
+          1.5057915952952108
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 703,
+        "fold": 8,
+        "domain": "marine"
+      }
+    },
+    "marine/fold_9": {
+      "process_scaler": {
+        "features": [
+          "h26_ocean_source_forcing_score_log1p",
+          "h26_ocean_transport_external_import_p80_log1p",
+          "h26_ocean_transport_persistence_enrichment_p92_p80_logratio",
+          "h26_ocean_transport_persistence_enrichment_p98_p92_logratio"
+        ],
+        "centers": [
+          0.2744171888292386,
+          0.6204554078303639,
+          0.5833091700148553,
+          0.9635261380058006
+        ],
+        "q10_q90_scales": [
+          0.815606835718171,
+          1.150103379437406,
+          0.6954219065177476,
+          1.4166263249327335
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "transport_path_potential_shared_directional",
+      "training": {
+        "records": 704,
+        "fold": 9,
+        "domain": "marine"
+      }
+    },
+    "transition/fold_1": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.8764951221109,
+          5.333174523822354,
+          0.3951247345515205,
+          5.985510924832467,
+          5.650368727962526,
+          4.368325322669405,
+          3.81198372592687,
+          0.0,
+          0.0054418684246472,
+          4.6913478822291435,
+          3.4711164e-08,
+          20.153551,
+          33.43577575683594,
+          23.92183304,
+          194.8849335
+        ],
+        "q10_q90_scales": [
+          5.10958886902163,
+          5.357424654108787,
+          1.552830595411302,
+          3.1099991292653186,
+          3.8639797528250006,
+          1.9984423643147249,
+          4.298160204082431,
+          0.0502030602606038,
+          0.09668386141829312,
+          4.924350925499244,
+          3.3051438e-07,
+          29.292243,
+          6.654452896118158,
+          14.314826009999999,
+          72.2552795
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 601,
+        "fold": 1,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_10": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.802744207462473,
+          5.289414848603384,
+          0.38415104399954286,
+          5.916641288911449,
+          5.5674504322875285,
+          4.3051157588727325,
+          3.8335236501969487,
+          0.0,
+          0.0071028403386687,
+          4.61512051684126,
+          2.7738116e-08,
+          20.18885,
+          33.3079833984375,
+          23.75850105,
+          194.928299
+        ],
+        "q10_q90_scales": [
+          5.656576951981521,
+          5.448712406746362,
+          1.7076836360122858,
+          3.3099639063900566,
+          4.388645433319047,
+          2.121317647903722,
+          4.41508434445591,
+          0.0505049153838014,
+          0.0844575805990414,
+          4.929786706232935,
+          3.3051438e-07,
+          28.013071000000004,
+          6.567745208740234,
+          13.729455,
+          69.4367676
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 602,
+        "fold": 10,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_2": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.821973886640365,
+          5.399325138075902,
+          0.36824846779925546,
+          5.725436327005388,
+          5.5764697040884865,
+          4.365987510898419,
+          3.8164500989113876,
+          0.0,
+          0.0068288549974887,
+          4.61512051684126,
+          2.8906534e-08,
+          19.654066,
+          33.40665054321289,
+          24.64899254,
+          196.6416473
+        ],
+        "q10_q90_scales": [
+          5.282276325691814,
+          5.312601394759412,
+          1.5350605737001404,
+          3.0572238286101365,
+          3.9056889408733486,
+          2.005613928138683,
+          4.261489589286731,
+          0.05067835651392405,
+          0.09369550468341195,
+          4.87102485539535,
+          3.134675e-07,
+          26.981418,
+          6.267999649047852,
+          14.352584840000002,
+          74.12528989999998
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 601,
+        "fold": 2,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_3": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.806152617414646,
+          5.238415323333393,
+          0.3728762185258059,
+          5.957274384020037,
+          5.6122838251110565,
+          4.360713669162541,
+          3.6973078784743105,
+          0.0,
+          0.0055259847488923,
+          4.605120183487925,
+          2.6291778e-08,
+          19.604952,
+          33.334415435791016,
+          23.757844925,
+          194.8849335
+        ],
+        "q10_q90_scales": [
+          5.5656121638722125,
+          5.374481927076438,
+          1.6931158190975144,
+          3.2333639112465606,
+          4.148531694512634,
+          2.0898648509335507,
+          4.433954162416432,
+          0.0485331660588151,
+          0.0963486182693345,
+          4.924350925499244,
+          3.134675e-07,
+          27.163126,
+          6.128229713439939,
+          14.816854469999999,
+          75.55901636999997
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 602,
+        "fold": 3,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_4": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.8764951221109,
+          5.238415323333393,
+          0.39276994193361203,
+          5.898300082773461,
+          5.560877494592171,
+          4.353531644372705,
+          3.9160543003015635,
+          0.0,
+          0.00602091288033135,
+          4.59511985013459,
+          2.7738116e-08,
+          20.156940499999997,
+          33.334415435791016,
+          23.75850105,
+          194.5884399
+        ],
+        "q10_q90_scales": [
+          5.422629686529222,
+          5.349608097568752,
+          1.5731735087280454,
+          3.1226252315268948,
+          3.886745091074607,
+          2.0449611089198507,
+          4.500238138292695,
+          0.0505049153838014,
+          0.0844575805990414,
+          4.924350925499244,
+          3.2707752e-07,
+          27.752066500000033,
+          6.686958312988288,
+          14.259269332,
+          69.6533814
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 601,
+        "fold": 4,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_5": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.8764951221109,
+          5.238415323333393,
+          0.4267700890982503,
+          5.993000144996517,
+          5.814080319277945,
+          4.373428469831598,
+          3.72638346838657,
+          0.0,
+          0.00520942645453665,
+          4.718498871295094,
+          3.1142065e-08,
+          20.015549,
+          33.399410247802734,
+          23.56801796,
+          193.5658722
+        ],
+        "q10_q90_scales": [
+          5.344852856326809,
+          5.366046712487867,
+          1.6335338261340107,
+          3.2312601054544325,
+          3.832788238575272,
+          2.076257402287993,
+          4.285725260177684,
+          0.0453308773805846,
+          0.09369584773371996,
+          4.93591174790032,
+          3.2707752e-07,
+          29.279013,
+          6.691423416137695,
+          14.314820290000002,
+          69.2149201
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 602,
+        "fold": 5,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_6": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.793241854362556,
+          5.292995077437891,
+          0.3930105311077259,
+          5.992419458969409,
+          5.6719543587433305,
+          4.389628160957448,
+          3.772633560234573,
+          0.0,
+          0.0055397772448738,
+          4.75788206295206,
+          3.1142065e-08,
+          20.061243,
+          33.561485290527344,
+          23.92183304,
+          194.3709259
+        ],
+        "q10_q90_scales": [
+          5.085776350576694,
+          5.397530657903715,
+          1.799074676322477,
+          3.1731957942118196,
+          3.9676181545817086,
+          2.1278273862819006,
+          4.402721253892985,
+          0.04563951567910176,
+          0.11087625924087562,
+          4.924350925499244,
+          3.2707752e-07,
+          29.279013,
+          6.686199188232422,
+          13.674166871,
+          72.03300469999999
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 602,
+        "fold": 6,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_7": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.81036280932133,
+          5.15910074902409,
+          0.3910431469703977,
+          5.97780262747828,
+          5.556939595013872,
+          4.327755593388618,
+          3.8617048190489336,
+          0.0,
+          0.0055397772448738,
+          4.6913478822291435,
+          2.7738116e-08,
+          20.34911,
+          33.46062469482422,
+          23.19793892,
+          194.928299
+        ],
+        "q10_q90_scales": [
+          5.430898241643909,
+          5.577740605816274,
+          1.7003023770088168,
+          3.199169255934766,
+          4.331085572254426,
+          2.0635654570089748,
+          4.516864756174378,
+          0.0448699322424378,
+          0.0968176712351522,
+          4.924350925499244,
+          3.2707752e-07,
+          30.773001999999998,
+          6.88032341003418,
+          14.816848750000002,
+          72.85055549999998
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 601,
+        "fold": 7,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_8": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.76850128683542,
+          5.271104377032744,
+          0.39181922183359097,
+          5.94465997346793,
+          5.580609257065021,
+          4.365987510898419,
+          3.6973078784743105,
+          0.0,
+          0.0048382113439455,
+          4.59511985013459,
+          2.1344e-08,
+          20.015549,
+          33.405418395996094,
+          24.53450012,
+          194.8849335
+        ],
+        "q10_q90_scales": [
+          5.2437658632745165,
+          5.3357058344966575,
+          1.7870612669897523,
+          3.2971798699396,
+          3.9315696161304228,
+          2.1156503316426747,
+          4.146723661147866,
+          0.04834016304387523,
+          0.1024223970434206,
+          4.924350925499244,
+          3.2707752e-07,
+          25.842592000000018,
+          5.7235107421875,
+          13.99531459,
+          71.8710175
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 602,
+        "fold": 8,
+        "domain": "transition"
+      }
+    },
+    "transition/fold_9": {
+      "process_scaler": {
+        "features": [
+          "h26_outlet_river_export_decay_100km",
+          "h26_outlet_spot_delivery_decay_100km",
+          "h26_outlet_nightlight_delivery_decay_100km",
+          "h26_outlet_road_delivery_decay_100km",
+          "h26_outlet_population_delivery_decay_100km",
+          "h26_nearest_supported_outlet_distance_km",
+          "h26_outlet_discharge_decay_100km",
+          "h26_cmems_positive_outlet_to_cell_current_ms",
+          "h26_cmems_positive_cell_to_outlet_current_ms",
+          "positive_water_depth_m",
+          "h26_cmems_positive_convergence_sinv",
+          "h26_cmems_mld_m_mean",
+          "m6_sea_surface_salinity_psu",
+          "m6_global_annual_mean_2m_air_temperature_c_2020",
+          "m6_global_surface_downward_shortwave_w_m2_2020"
+        ],
+        "centers": [
+          8.87602509371729,
+          5.16370957868747,
+          0.413404377593117,
+          5.978781916076021,
+          5.556939595013872,
+          4.365987510898419,
+          3.718311603239345,
+          0.0,
+          0.00811945614216485,
+          4.61512051684126,
+          2.6361555e-08,
+          20.243515,
+          33.364952087402344,
+          23.63269997,
+          192.1127319
+        ],
+        "q10_q90_scales": [
+          5.176407626467381,
+          5.471491773337503,
+          1.780093986557935,
+          3.255788873164642,
+          4.334877510564529,
+          2.104676631796907,
+          4.4904183501620825,
+          0.0459054296982466,
+          0.1157492044698447,
+          4.829040745694918,
+          3.3051438e-07,
+          26.499378999999998,
+          6.311349868774414,
+          14.86497593,
+          75.9024048
+        ],
+        "transform": "optional_signed_log1p_then_median_impute_q10_q90_scale_clip8"
+      },
+      "seed": 260826,
+      "candidate": "outlet_plume_signed_delivery_process",
+      "training": {
+        "records": 602,
+        "fold": 9,
+        "domain": "transition"
+      }
+    }
+  },
+  "removal_units": {
+    "r1_30/freshwater/fold_1": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 1,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_10": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 10,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_2": {
+      "epochs": 180,
+      "records": 1109,
+      "fold": 2,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_3": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 3,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_4": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 4,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_5": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 5,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_6": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 6,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_7": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 7,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_8": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 8,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/freshwater/fold_9": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 9,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_1": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 1,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_10": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 10,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_2": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 2,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_3": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 3,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_4": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 4,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_5": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 5,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_6": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 6,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_7": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 7,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_8": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 8,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/marine/fold_9": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 9,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_1": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 1,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_10": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 10,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_2": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 2,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_3": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 3,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_4": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 4,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_5": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 5,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_6": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 6,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_7": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 7,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_8": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 8,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_30/transition/fold_9": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 9,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_1": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 1,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_10": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 10,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_2": {
+      "epochs": 180,
+      "records": 1109,
+      "fold": 2,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_3": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 3,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_4": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 4,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_5": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 5,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_6": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 6,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_7": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 7,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_8": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 8,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/freshwater/fold_9": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 9,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_1": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 1,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_10": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 10,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_2": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 2,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_3": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 3,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_4": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 4,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_5": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 5,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_6": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 6,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_7": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 7,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_8": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 8,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/marine/fold_9": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 9,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_1": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 1,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_10": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 10,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_2": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 2,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_3": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 3,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_4": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 4,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_5": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 5,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_6": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 6,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_7": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 7,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_8": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 8,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_50/transition/fold_9": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 9,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_1": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 1,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_10": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 10,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_2": {
+      "epochs": 180,
+      "records": 1109,
+      "fold": 2,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_3": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 3,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_4": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 4,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_5": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 5,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_6": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 6,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_7": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 7,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_8": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 8,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/freshwater/fold_9": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 9,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_1": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 1,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_10": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 10,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_2": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 2,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_3": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 3,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_4": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 4,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_5": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 5,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_6": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 6,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_7": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 7,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_8": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 8,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/marine/fold_9": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 9,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_1": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 1,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_10": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 10,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_2": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 2,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_3": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 3,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_4": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 4,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_5": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 5,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_6": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 6,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_7": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 7,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_8": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 8,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r1_80/transition/fold_9": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 9,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_1": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 1,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_10": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 10,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_2": {
+      "epochs": 180,
+      "records": 1109,
+      "fold": 2,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_3": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 3,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_4": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 4,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_5": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 5,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_6": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 6,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_7": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 7,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_8": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 8,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/freshwater/fold_9": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 9,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_1": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 1,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_10": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 10,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_2": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 2,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_3": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 3,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_4": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 4,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_5": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 5,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_6": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 6,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_7": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 7,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_8": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 8,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/marine/fold_9": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 9,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_1": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 1,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_10": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 10,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_2": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 2,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_3": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 3,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_4": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 4,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_5": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 5,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_6": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 6,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_7": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 7,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_8": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 8,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_30/transition/fold_9": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 9,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_1": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 1,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_10": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 10,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_2": {
+      "epochs": 180,
+      "records": 1109,
+      "fold": 2,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_3": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 3,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_4": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 4,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_5": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 5,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_6": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 6,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_7": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 7,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_8": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 8,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/freshwater/fold_9": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 9,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_1": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 1,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_10": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 10,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_2": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 2,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_3": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 3,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_4": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 4,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_5": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 5,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_6": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 6,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_7": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 7,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_8": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 8,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/marine/fold_9": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 9,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_1": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 1,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_10": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 10,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_2": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 2,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_3": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 3,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_4": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 4,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_5": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 5,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_6": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 6,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_7": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 7,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_8": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 8,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_50/transition/fold_9": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 9,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_1": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 1,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_10": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 10,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_2": {
+      "epochs": 180,
+      "records": 1109,
+      "fold": 2,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_3": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 3,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_4": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 4,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_5": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 5,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_6": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 6,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_7": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 7,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_8": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 8,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/freshwater/fold_9": {
+      "epochs": 180,
+      "records": 1108,
+      "fold": 9,
+      "domain": "freshwater",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_1": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 1,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_10": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 10,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_2": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 2,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_3": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 3,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_4": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 4,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_5": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 5,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_6": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 6,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_7": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 7,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_8": {
+      "epochs": 180,
+      "records": 703,
+      "fold": 8,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/marine/fold_9": {
+      "epochs": 180,
+      "records": 704,
+      "fold": 9,
+      "domain": "marine",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_1": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 1,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_10": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 10,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_2": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 2,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_3": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 3,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_4": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 4,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_5": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 5,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_6": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 6,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_7": {
+      "epochs": 180,
+      "records": 601,
+      "fold": 7,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_8": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 8,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    },
+    "r2_80/transition/fold_9": {
+      "epochs": 180,
+      "records": 602,
+      "fold": 9,
+      "domain": "transition",
+      "calibration_crossfits": 3
+    }
+  },
+  "small_sample_units": [
+    {
+      "domain": "marine",
+      "round": 1,
+      "removal": 80,
+      "fold": 7,
+      "earlystop_records": 37,
+      "earlystop_sources": 8,
+      "minimum_earlystop_records": 30,
+      "fit_records": 3293
+    },
+    {
+      "domain": "transition",
+      "round": 1,
+      "removal": 80,
+      "fold": 10,
+      "earlystop_records": 40,
+      "earlystop_sources": 9,
+      "minimum_earlystop_records": 30,
+      "fit_records": 770
+    },
+    {
+      "domain": "transition",
+      "round": 1,
+      "removal": 80,
+      "fold": 9,
+      "earlystop_records": 33,
+      "earlystop_sources": 10,
+      "minimum_earlystop_records": 30,
+      "fit_records": 722
+    }
+  ]
+}

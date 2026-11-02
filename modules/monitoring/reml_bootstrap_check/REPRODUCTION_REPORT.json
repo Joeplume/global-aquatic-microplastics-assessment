@@ -1,0 +1,30 @@
+{
+  "scope": "actual downstream recalculation from frozen upstream model outputs; not end-to-end H26 training",
+  "reml": {
+    "records": 24129,
+    "actual_reml_refitted": true,
+    "bootstrap_replicates_per_domain_actually_recomputed": 3,
+    "counts": [
+      {
+        "domain": "freshwater",
+        "N30_changing": 1969,
+        "N30_stable": 226,
+        "N30_standardized": 81
+      },
+      {
+        "domain": "transition",
+        "N30_changing": 2611,
+        "N30_stable": 293,
+        "N30_standardized": 127
+      },
+      {
+        "domain": "marine",
+        "N30_changing": 2620,
+        "N30_stable": 401,
+        "N30_standardized": 69
+      }
+    ],
+    "standardization": "complete removal of reported size/unit variance only; hypothetical scenario, not empirical performance",
+    "scope": "six annual occasions, AR1 rho .3, 30% decline, two-sided alpha .05, power .8; independent stations"
+  }
+}

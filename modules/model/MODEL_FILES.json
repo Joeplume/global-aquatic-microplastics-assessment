@@ -1,0 +1,248 @@
+[
+  {
+    "package_path": "project/src/modeling/h26/code/mem_uncertainty/build_h23_caoa_prototype.py",
+    "role": "formal_model_code",
+    "size": 28314,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/mem_uncertainty/run_h24_simple_protocol_preview.py",
+    "role": "formal_model_code",
+    "size": 36731,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/validation/run_h26_direct_s0_s3.py",
+    "role": "formal_model_code",
+    "size": 21862,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/model/freshwater/run_h26_hydro_residual_booster.py",
+    "role": "formal_model_code",
+    "size": 19528,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/validation/run_h26_modular_process_bnn.py",
+    "role": "formal_model_code",
+    "size": 16305,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/model/marine/run_h26_marine_vector_modular_bnn.py",
+    "role": "formal_model_code",
+    "size": 133835,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/model/freshwater/run_h26_freshwater_network_modular_bnn.py",
+    "role": "formal_model_code",
+    "size": 50734,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/model/transition_coastal/run_h26_transition_network_modular_bnn.py",
+    "role": "formal_model_code",
+    "size": 15466,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/code/model/transition_coastal/run_h26_transition_outlet_plume_bnn.py",
+    "role": "formal_model_code",
+    "size": 24615,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/analysis/weighted_training/common.py",
+    "role": "execution_adapter",
+    "size": 6263,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/analysis/weighted_training/run_unit.py",
+    "role": "execution_adapter",
+    "size": 7369,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/analysis/weighted_training/CONTRACT.json",
+    "role": "model_input",
+    "size": 30113,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/analysis/weighted_training/FROZEN_GROUPED10_FOLDS.csv.gz",
+    "role": "model_input",
+    "size": 255648,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/analysis/validation_runs/model_lane/run_validation_unit.py",
+    "role": "execution_adapter",
+    "size": 10419,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "project/src/modeling/h26/data/observations/h23_observation_layer_training_records.csv.gz",
+    "role": "model_input",
+    "size": 602773,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/evaluation/grouped/H26_FINAL10_OOF.csv.gz",
+    "role": "model_input",
+    "size": 1793226,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/data/04_folds_aoa_caoa/H26_CAOA_V0_3_SOURCE_BRIDGE_GRID.csv.gz",
+    "role": "model_input",
+    "size": 7971664,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/paper_selection_prisma_audit/data/formal_library_qaqc_paper_summary_20260716.csv",
+    "role": "model_input",
+    "size": 6095880,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/data/05_process_covariates/H26_RIVER_NETWORK_PROCESS_TRAIN.csv.gz",
+    "role": "model_input",
+    "size": 5263967,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/features/H26_TRANSITION_VECTOR_PLUME_PRESSURE_DELIVERY_TRAIN.csv.gz",
+    "role": "model_input",
+    "size": 6156203,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/features/marine_path_v4/H26_OCEAN_TRANSPORT_GRAPH_TRAIN.csv.gz",
+    "role": "model_input",
+    "size": 5505159,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/data/05_process_covariates/H26_RIVER_NETWORK_PROCESS_PREDICTION.csv.gz",
+    "role": "model_input",
+    "size": 36016537,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/features/H26_TRANSITION_VECTOR_PLUME_PRESSURE_DELIVERY_PREDICTION.csv.gz",
+    "role": "model_input",
+    "size": 40739066,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/features/marine_path_v4/H26_OCEAN_TRANSPORT_GRAPH_PREDICTION.csv.gz",
+    "role": "model_input",
+    "size": 59848921,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/evaluation/benchmark/random/H26_RANDOM_RECORD10_PRIMARY_OOF.csv.gz",
+    "role": "model_input",
+    "size": 1029597,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/folds/H26_FOLDS_SPATIAL_MAIN_10DEG.csv.gz",
+    "role": "model_input",
+    "size": 476599,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/folds/H26_FOLDS_SOURCE_MAIN.csv.gz",
+    "role": "model_input",
+    "size": 480297,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "project/src/modeling/h26/validation/transfer_validation/folds/H26_FOLDS_JOINT_MAIN_10DEG.csv.gz",
+    "role": "model_input",
+    "size": 476432,
+    "access": "reviewer bundle; redistribute only after source-data permissions review"
+  },
+  {
+    "package_path": "reference/random10_OOF.csv.gz",
+    "role": "reference_result",
+    "size": 2073411,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "reference/spatial_OOF.csv.gz",
+    "role": "reference_result",
+    "size": 1011265,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "reference/source_OOF.csv.gz",
+    "role": "reference_result",
+    "size": 905483,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "reference/joint_OOF.csv.gz",
+    "role": "reference_result",
+    "size": 898436,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "reference/TABLE4_QAQC_METRICS.csv",
+    "role": "reference_result",
+    "size": 248,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "reference/RANDOM10_QAQC_METRICS.csv",
+    "role": "reference_result",
+    "size": 1312,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "reference/grouped10_OOF.csv.gz",
+    "role": "reference_result",
+    "size": 1661090,
+    "access": "code or derived result"
+  },
+  {
+    "package_path": "provenance/original_aggregate.py",
+    "role": "aggregation_code_or_reference",
+    "size": 33867,
+    "access": "derived result"
+  },
+  {
+    "package_path": "provenance/original_aggregate_validation.py",
+    "role": "aggregation_code_or_reference",
+    "size": 26597,
+    "access": "derived result"
+  },
+  {
+    "package_path": "reference/SELECTION_WEIGHTS_AT_50PCT.csv.gz",
+    "role": "aggregation_code_or_reference",
+    "size": 2319014,
+    "access": "derived result"
+  },
+  {
+    "package_path": "reference/MAIN_TABLE_STRICT_SOURCE_50PCT.csv",
+    "role": "aggregation_code_or_reference",
+    "size": 3490,
+    "access": "derived result"
+  },
+  {
+    "package_path": "reference/TABLE26_QAQC_50PCT.csv",
+    "role": "aggregation_code_or_reference",
+    "size": 2327,
+    "access": "derived result"
+  },
+  {
+    "package_path": "reference/si_v22_7_tables.json",
+    "role": "aggregation_code_or_reference",
+    "size": 67624,
+    "access": "derived result"
+  }
+]

@@ -1,0 +1,300 @@
+{
+  "stages": {
+    "verify": {
+      "jobs": [],
+      "starting_point": "Packaged numerical inputs and source files.",
+      "interpretation": "Input-file integrity check completed."
+    },
+    "results": {
+      "jobs": [
+        {
+          "name": "model_metrics",
+          "argv": [
+            "{python}",
+            "{root}/modules/model/reaggregate_oof.py",
+            "--output",
+            "{out}/model_metrics"
+          ],
+          "reports": [
+            "{out}/model_metrics/COHORTS.json"
+          ]
+        },
+        {
+          "name": "support_validation",
+          "argv": [
+            "{python}",
+            "{root}/modules/model/reaggregate_support_validation.py",
+            "--output",
+            "{out}/support_validation"
+          ],
+          "reports": []
+        },
+        {
+          "name": "global_statistics",
+          "argv": [
+            "{python}",
+            "{root}/modules/global/run.py",
+            "--output",
+            "{out}/global"
+          ],
+          "reports": [
+            "{out}/global/RUN_REPORT.json"
+          ]
+        },
+        {
+          "name": "network_and_reml",
+          "argv": [
+            "{python}",
+            "{root}/modules/monitoring/reproduce_monitoring.py",
+            "--output",
+            "{out}/monitoring",
+            "--boundary-reps",
+            "200"
+          ],
+          "reports": [
+            "{out}/monitoring/REPRODUCTION_REPORT.json"
+          ]
+        },
+        {
+          "name": "basin_monitoring",
+          "argv": [
+            "{python}",
+            "{root}/modules/monitoring/reproduce_basin_monitoring.py",
+            "--output",
+            "{out}/basins",
+            "--stage",
+            "all"
+          ],
+          "reports": [
+            "{out}/basins/BASIN_REPRODUCTION_REPORT.json"
+          ]
+        },
+        {
+          "name": "temporal_simulation",
+          "argv": [
+            "{python}",
+            "{root}/modules/monitoring/reproduce_temporal.py",
+            "--output",
+            "{out}/temporal"
+          ],
+          "reports": [
+            "{out}/temporal/REPRODUCTION_REPORT.json"
+          ]
+        },
+        {
+          "name": "comparisons_and_removal",
+          "argv": [
+            "{python}",
+            "{root}/modules/model_supplement/reproduce_supplement.py",
+            "--output",
+            "{out}/comparisons"
+          ],
+          "reports": [
+            "{out}/comparisons/VALIDATION.json"
+          ]
+        },
+        {
+          "name": "support_population",
+          "argv": [
+            "{python}",
+            "{root}/modules/global/reaggregate_support.py",
+            "--output",
+            "{out}/support_population"
+          ],
+          "reports": [
+            "{out}/support_population/CHECK.json"
+          ]
+        },
+        {
+          "name": "matched_variance",
+          "argv": [
+            "{python}",
+            "{root}/modules/model_variance/reproduce_variance.py",
+            "--output",
+            "{out}/matched_variance"
+          ]
+        },
+        {
+          "name": "support_strata",
+          "argv": [
+            "{python}",
+            "{root}/modules/model_support_strata/reproduce_support_strata.py",
+            "--output",
+            "{out}/support_strata"
+          ]
+        }
+      ],
+      "starting_point": "Frozen actual predictions, prepared environmental matching matrices, held-out records and cost inputs.",
+      "interpretation": "Downstream tables, 200 boundary replicates, 5000-draw temporal simulations and 16 basin-cost scenarios completed."
+    },
+    "results-full": {
+      "jobs": [
+        {
+          "name": "model_metrics",
+          "argv": [
+            "{python}",
+            "{root}/modules/model/reaggregate_oof.py",
+            "--output",
+            "{out}/model_metrics"
+          ],
+          "reports": [
+            "{out}/model_metrics/COHORTS.json"
+          ]
+        },
+        {
+          "name": "support_validation",
+          "argv": [
+            "{python}",
+            "{root}/modules/model/reaggregate_support_validation.py",
+            "--output",
+            "{out}/support_validation"
+          ],
+          "reports": []
+        },
+        {
+          "name": "global_statistics",
+          "argv": [
+            "{python}",
+            "{root}/modules/global/run.py",
+            "--output",
+            "{out}/global"
+          ],
+          "reports": [
+            "{out}/global/RUN_REPORT.json"
+          ]
+        },
+        {
+          "name": "network_and_reml",
+          "argv": [
+            "{python}",
+            "{root}/modules/monitoring/reproduce_monitoring.py",
+            "--output",
+            "{out}/monitoring",
+            "--boundary-reps",
+            "200",
+            "--reml-reps",
+            "2000"
+          ],
+          "reports": [
+            "{out}/monitoring/REPRODUCTION_REPORT.json"
+          ]
+        },
+        {
+          "name": "basin_monitoring",
+          "argv": [
+            "{python}",
+            "{root}/modules/monitoring/reproduce_basin_monitoring.py",
+            "--output",
+            "{out}/basins",
+            "--stage",
+            "all",
+            "--full-cost-grid"
+          ],
+          "reports": [
+            "{out}/basins/BASIN_REPRODUCTION_REPORT.json"
+          ]
+        },
+        {
+          "name": "temporal_simulation",
+          "argv": [
+            "{python}",
+            "{root}/modules/monitoring/reproduce_temporal.py",
+            "--output",
+            "{out}/temporal"
+          ],
+          "reports": [
+            "{out}/temporal/REPRODUCTION_REPORT.json"
+          ]
+        },
+        {
+          "name": "comparisons_and_removal",
+          "argv": [
+            "{python}",
+            "{root}/modules/model_supplement/reproduce_supplement.py",
+            "--output",
+            "{out}/comparisons"
+          ],
+          "reports": [
+            "{out}/comparisons/VALIDATION.json"
+          ]
+        },
+        {
+          "name": "support_population",
+          "argv": [
+            "{python}",
+            "{root}/modules/global/reaggregate_support.py",
+            "--output",
+            "{out}/support_population"
+          ],
+          "reports": [
+            "{out}/support_population/CHECK.json"
+          ]
+        },
+        {
+          "name": "matched_variance",
+          "argv": [
+            "{python}",
+            "{root}/modules/model_variance/reproduce_variance.py",
+            "--output",
+            "{out}/matched_variance"
+          ]
+        },
+        {
+          "name": "support_strata",
+          "argv": [
+            "{python}",
+            "{root}/modules/model_support_strata/reproduce_support_strata.py",
+            "--output",
+            "{out}/support_strata"
+          ]
+        }
+      ],
+      "starting_point": "Same frozen inputs; all 200 boundary replicates, 2000 REML bootstrap replicates per water type, and 216 basin-cost scenarios.",
+      "interpretation": "Extended downstream analysis completed, including 2000 REML replicates per waterbody and 216 basin-cost scenarios."
+    },
+    "model-fold": {
+      "jobs": [
+        {
+          "name": "training",
+          "argv": [
+            "{python}",
+            "{root}/modules/model/run_model.py",
+            "--design",
+            "{design}",
+            "--domain",
+            "{domain}",
+            "--fold",
+            "{fold}",
+            "--output",
+            "{out}/training"
+          ],
+          "reports": []
+        }
+      ],
+      "starting_point": "Formal prepared training and process tables, QA/QC scores and frozen folds.",
+      "interpretation": "Training completed for the selected fold."
+    },
+    "model-all": {
+      "jobs": [
+        {
+          "name": "training",
+          "argv": [
+            "{python}",
+            "{root}/modules/model/run_model.py",
+            "--design",
+            "{design}",
+            "--domain",
+            "all",
+            "--fold",
+            "all",
+            "--output",
+            "{out}/training"
+          ],
+          "reports": []
+        }
+      ],
+      "starting_point": "Formal prepared training and process tables, QA/QC scores and frozen folds.",
+      "interpretation": "Training completed for all domains and folds of the selected design."
+    }
+  }
+}

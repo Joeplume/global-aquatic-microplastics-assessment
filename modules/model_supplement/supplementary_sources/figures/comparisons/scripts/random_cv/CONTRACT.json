@@ -1,0 +1,75 @@
+{
+  "outer_folds": "exact H26 persisted record-random tenfold labels; no redraw",
+  "N": 24129,
+  "target": "original observed_log10, log10(items/m3)",
+  "models": [
+    "LinearRegression",
+    "RBF_NN",
+    "HistGradientBoosting",
+    "SVR",
+    "RF",
+    "MLP",
+    "BNN_nonhier"
+  ],
+  "H26": "reused frozen primary operational posterior median",
+  "baseline_inputs": "same domain-specific environmental/process features as earlier grouped controls; no source or protocol predictors",
+  "boundary": "H26 uses source-conditioned prediction where available; matched random folds do not equalize information or establish causal benefit of hierarchy",
+  "preprocessing": "re-estimated using fit rows only, original signed-log1p and ProcessScaler",
+  "weights": "inverse OUTER-TRAIN source counts, normalized in training; no heldout target use",
+  "inner_split": "fixed seed random 80/20 split of outer training only",
+  "BNN": "original selected modular backbone without source-offset layer; original Adam/Huber/KL/shrinkage and 180 epochs/patience24; inner checkpoint selection; 24 posterior draws",
+  "MLP": {
+    "hidden": [
+      64,
+      32
+    ],
+    "activation": "ReLU",
+    "loss": "weighted MSE",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch": 512,
+    "max_epochs": 200,
+    "patience": 25,
+    "selection": "one inner 20% site-event grouped validation; weighted RMSE selects epoch; refit all outer training",
+    "target_scaling": "fit-subset weighted mean and standard deviation, floor 0.25"
+  },
+  "RBF_NN": {
+    "hidden_units": 96,
+    "activation": "Gaussian exp(-squared_distance/(2*width^2))",
+    "centers": "train-only weighted MiniBatchKMeans, n_init=3, max_iter=100",
+    "widths": "median distance to 5 nearest other fitted centers; minimum 0.1",
+    "output": "train-only weighted ridge with intercept, alpha=1; target standardized on fit subset",
+    "training": "standard two-stage RBF neural network; hidden centers unsupervised, output supervised"
+  },
+  "RF": {
+    "trees": 400,
+    "max_features": 0.7,
+    "min_samples_leaf": 5
+  },
+  "HGB": {
+    "iterations": 180,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 20,
+    "learning_rate": 0.05,
+    "l2": 1,
+    "early_stopping": false
+  },
+  "SVR": {
+    "kernel": "rbf",
+    "C": 10,
+    "epsilon": 0.1,
+    "gamma": "scale",
+    "tol": 0.001,
+    "max_iter": 200000
+  },
+  "inputs": {
+    "H26_OOF": {
+      "path": "src/modeling/h26/evaluation/benchmark/random/H26_RANDOM_RECORD10_PRIMARY_OOF.csv.gz",
+      "sha256": "b9726116cee0b75e0d0fc90d983ee9648b5708c0deed3f4e3de9a689ef83927a"
+    },
+    "baseline_lib": "284987da571553dc7dec221261316df69279dcafc141519e4e45f0ec5628a5e9",
+    "simple_code": "93e1d281cdd5bd0a7348fbb83583c783d48007a6f2df6c82e7f0df56d31b1aa8"
+  },
+  "resources": "one training process; shared Windows mutex; CPU2 threads; resumable units"
+}
